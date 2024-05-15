@@ -1,5 +1,6 @@
 import TopNav from '../components/topnav/topnav';
 import ResumeButton from '../components/buttons/resumebutton';
+import LearnMore from '../components/learnmore/learnmore';
 import { sofia, playfair, rainbow } from '../components/font/fonts';
 
 export default function Home() {
@@ -32,6 +33,9 @@ export default function Home() {
                             <ResumeButton />
                         </div>
                     </div>
+                </div>
+                <div className="flex justify-center pt-40">
+                    <LearnMore />
                 </div>
             </div>
         </main>

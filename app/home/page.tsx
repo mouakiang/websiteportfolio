@@ -2,14 +2,18 @@ import TopNav from '../components/topnav/topnav';
 import ResumeButton from '../components/buttons/resumebutton';
 import LearnMore from '../components/learnmore/learnmore';
 import { sofia, playfair, rainbow } from '../components/font/fonts';
+import Bubble from '../components/bubbles/bubble';
 
 export default function Home() {
     return (
         <>
             <main>
-                <div className="bg-gradient-to-t from-cyan-50 to-cyan-300 h-screen">
+                <div className="bg-gradient-to-t from-cyan-50 to-cyan-300 h-screen relative overflow-hidden">
                     <div>
                         <TopNav />
+                    </div>
+                    <div>
+                        <Bubble />
                     </div>
                     <div className="mt-60 mb-40 flex flex-col md:flex-row justify-center md:items-start items-center">
                         <div>

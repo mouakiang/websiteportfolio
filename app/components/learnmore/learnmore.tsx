@@ -1,7 +1,10 @@
 import { unica } from '../font/fonts';
+import Link from 'next/link';
 import './learnmore.css';
 
 export default function LearnMore() {
+    
+
     return (
         <main>
             <div>
@@ -9,11 +12,11 @@ export default function LearnMore() {
                     Learn More
                 </h1>
             </div>
-            <div className="arrow mt-96">
+            <Link href="/about" className="arrow mt-96">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </Link>
         </main>
     );
 }

@@ -7,7 +7,7 @@ import Bubble from '../components/bubbles/bubble';
 export default function Home() {
     return (
         <>
-            <main>
+            <section id="home">
                 <div className="bg-gradient-to-t from-cyan-50 to-cyan-300 h-screen relative overflow-hidden">
                     <div>
                         <TopNav />
@@ -43,7 +43,12 @@ export default function Home() {
                         <LearnMore />
                     </div>
                 </div>
-            </main>
+            </section>
+            <section id="about">
+                <div>
+                    <h1>Hello</h1>
+                </div>
+            </section>
         </>
     );
 }

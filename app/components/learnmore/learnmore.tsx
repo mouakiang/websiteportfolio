@@ -12,7 +12,7 @@ export default function LearnMore() {
                     Learn More
                 </h1>
             </div>
-            <Link href="/about" className="arrow mt-96">
+            <Link href="#about" className="arrow mt-96">
                 <span></span>
                 <span></span>
                 <span></span>

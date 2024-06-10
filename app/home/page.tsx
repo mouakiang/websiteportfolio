@@ -8,7 +8,7 @@ export default function Home() {
     return (
         <>
             <section id="home">
-                <div className="bg-gradient-to-t from-cyan-50 to-cyan-300 h-screen relative overflow-hidden">
+                <div className="bg-gradient-to-t from-cyan-300 to-cyan-50 h-screen relative overflow-hidden">
                     <div>
                         <TopNav />
                     </div>
@@ -46,7 +46,8 @@ export default function Home() {
             </section>
             <section id="about">
                 <div>
-                    <h1>Hello</h1>
+                    <h1>What I Do?</h1>
+                    
                 </div>
             </section>
         </>

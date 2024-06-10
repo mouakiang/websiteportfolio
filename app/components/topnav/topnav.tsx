@@ -3,7 +3,7 @@ export default function TopNav() {
     return (
         <main>
             <div>
-                <div className="flex flex-row justify-end space-x-5 pt-5 text-white pr-20 md:h-auto ">
+                <div className="flex flex-row justify-end space-x-5 pt-5 text-cyan-400 pr-20 md:h-auto ">
                     <Link href="/home" className="hover:text-blue-700">
                         HOME
                     </Link>

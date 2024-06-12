@@ -3,6 +3,8 @@ import ResumeButton from '../components/buttons/resumebutton';
 import LearnMore from '../components/learnmore/learnmore';
 import { sofia, playfair, rainbow } from '../components/font/fonts';
 import Bubble from '../components/bubbles/bubble';
+import {motion} from 'framer-motion';
+import './home.css';
 
 export default function Home() {
     return (
@@ -42,12 +44,12 @@ export default function Home() {
                     <div className="flex justify-center pt-40">
                         <LearnMore />
                     </div>
+                    
                 </div>
             </section>
             <section id="about">
                 <div>
-                    <h1>What I Do?</h1>
-                    
+                    <h1 className="text-8xl text-center">What I Do?</h1>
                 </div>
             </section>
         </>

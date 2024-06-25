@@ -1,12 +1,19 @@
+'use client';
 import TopNav from '../components/topnav/topnav';
 import ResumeButton from '../components/buttons/resumebutton';
 import LearnMore from '../components/learnmore/learnmore';
 import { sofia, playfair, rainbow } from '../components/font/fonts';
 import Bubble from '../components/bubbles/bubble';
-import {motion} from 'framer-motion';
+import { motion } from 'framer-motion';
+import { useState } from 'react';
 import './home.css';
 
 export default function Home() {
+    const [showAbout, setShowAbout] = useState(false);
+
+    const handleChange = () => {
+        setShowAbout(true);
+    };
     return (
         <>
             <section id="home">
@@ -42,16 +49,22 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="flex justify-center pt-40">
-                        <LearnMore />
+                        <LearnMore onClick={handleChange} />
                     </div>
-                    
                 </div>
             </section>
-            <section id="about">
+            <motion.section
+                id="about"
+                initial={{ x: '100vw' }}
+                animate={{ x: showAbout ? 0 : '100vw' }}
+                transition={{ type: 'tween', ease: 'easeInOut', duration: 2 }}
+                className="absolute top-0 left-0 w-full h-screen bg-white"
+                style={{ zIndex: showAbout ? 1 : -1 }}
+            >
                 <div>
-                    <h1 className="text-8xl text-center">What I Do?</h1>
+                    <h1 className="text-7xl text-center">What I Do?</h1>
                 </div>
-            </section>
+            </motion.section>
         </>
     );
 }

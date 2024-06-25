@@ -1,10 +1,9 @@
+'use client';
 import { unica } from '../font/fonts';
 import Link from 'next/link';
 import './learnmore.css';
 
 export default function LearnMore() {
-    
-
     return (
         <main>
             <div>

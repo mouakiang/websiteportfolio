@@ -3,10 +3,14 @@ import { unica } from '../font/fonts';
 import Link from 'next/link';
 import './learnmore.css';
 
-export default function LearnMore() {
+interface LearnMoreProps {
+    onClick: () => void;
+}
+
+export default function LearnMore({ onClick }: LearnMoreProps) {
     return (
         <main>
-            <div>
+            <div onClick={onClick}>
                 <h1 className={`${unica.className} text-blue-400 text-2xl`}>
                     Learn More
                 </h1>

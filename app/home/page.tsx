@@ -55,11 +55,11 @@ export default function Home() {
             </section>
             <motion.section
                 id="about"
-                initial={{ x: '100vw' }}
-                animate={{ x: showAbout ? 0 : '100vw' }}
+                initial={{ y: '100vh' }}
+                animate={{ y: showAbout ? 0 : '100vh' }}
                 transition={{ type: 'tween', ease: 'easeInOut', duration: 2 }}
-                className="absolute top-0 left-0 w-full h-screen bg-white"
-                style={{ zIndex: showAbout ? 1 : -1 }}
+                className="fixed top-0 left-0 w-full h-screen bg-white"
+                style={{ display: showAbout ? 'block' : 'none', zIndex: 1 }}
             >
                 <div>
                     <h1 className="text-7xl text-center">What I Do?</h1>
